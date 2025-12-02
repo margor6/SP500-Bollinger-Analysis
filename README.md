@@ -18,6 +18,19 @@ A Python desktop application for technical analysis of the S&P 500 index using B
     * Bollinger Bands (Green/Red dashed lines)
 * **Customizable Parameter:** Users can adjust the moving average window (5 to 60 days) via a slider to see real-time updates on the chart.
 
+
+## Methodology
+
+The application calculates Bollinger Bands using the following logic:
+1.  **Moving Average:** Calculates the mean of the 'Close' price over the selected window $n$ (slider input).
+2.  **Standard Deviation (STD):** Calculates the STD over the same window.
+3.  **Upper Band:** $SMA + (2 \times STD)$
+4.  **Lower Band:** $SMA - (2 \times STD)$
+
+## Screenshot
+
+<img width="637" height="587" alt="image" src="https://github.com/user-attachments/assets/d8bc8be6-7e06-4a81-9105-430af8dd14da" />
+
 ## Tech
 
 * **Python 3**
@@ -41,13 +54,4 @@ To run this app locally:
     python main.py
     ```
 
-## Methodology
-
-The application calculates Bollinger Bands using the following logic:
-1.  **Moving Average:** Calculates the mean of the 'Close' price over the selected window $n$ (slider input).
-2.  **Standard Deviation (STD):** Calculates the STD over the same window.
-3.  **Upper Band:** $SMA + (2 \times STD)$
-4.  **Lower Band:** $SMA - (2 \times STD)$
-
-## Screenshot
 
